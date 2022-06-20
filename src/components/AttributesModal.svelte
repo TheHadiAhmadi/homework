@@ -14,8 +14,8 @@ import Repl from './Repl.svelte';
 
 <Modal bind:open>
   {#if open}
-	<Card class="relative h-80% col-12 min-w-sm overflow-hidden">
-		<CardBody>
+	<Card class="flex flex-col relative h-80vh col-12 min-w-sm overflow-hidden">
+		<div class="card-body h-full">
 			<div class="flex items-center justify-between">
 
 
@@ -25,7 +25,8 @@ import Repl from './Repl.svelte';
 			<Button on:click={() => open = false} square class="absolute top-0 right-0"><Icon icon="fa-solid:times" /></Button>
 		</div>
 			<Repl {tag}/>
-		</CardBody>
+		</div>
+		<div class="h-6"></div>
 
 <!-- 
 				<div

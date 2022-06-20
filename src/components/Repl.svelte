@@ -71,7 +71,7 @@
 
 </script>
 
-<div class="flex flex-col sm:flex-row h-400px items-stretch w-full">
+<div class="flex flex-col sm:flex-row h-full items-stretch w-full">
 
 {#if loading}
 <div class="absolute left-0 top-0 flex items-center justify-center w-full h-full bg-gray-900/50 text-xl" >Loading...</div>
